@@ -4,7 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import logo from '../../images/logo.png';
 import { useState } from 'react';
 
-function NavbarItem({ title, classProps }) {
+function NavBarItem({ title, classProps }) {
     return (
         <li className={`mx-4 cursor-pointer ${classProps}`}>
             {title}
@@ -22,7 +22,7 @@ function Navbar() {
             </div>
             <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
                 {['Market', 'Exchange', 'Tutorials', 'Wallets'].map((item, index) => (
-                    <NavbarItem key={item + index} title={item} />
+                    <NavBarItem key={item + index} title={item} />
                 ))}
                 <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">Login</li>
             </ul>

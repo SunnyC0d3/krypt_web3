@@ -3,7 +3,7 @@ import { Welcome, Footer, Navbar, Services, Transactions } from './components/in
 function App() {
   return (
     <>
-      <h1 className="min-h-screen">
+      <div className="min-h-screen">
         <div className="gradient-bg-welcome">
           <Navbar />
           <Welcome />
@@ -11,7 +11,7 @@ function App() {
         <Services />
         <Transactions />
         <Footer />
-      </h1>
+      </div>
     </>
   )
 }
