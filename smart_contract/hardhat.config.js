@@ -4,8 +4,8 @@ module.exports = {
   solidity: '0.8.0',
   networks: {
     ropsten: {
-      url: process.env.HARDHAT_WAFFLE_URL,
-      accounts: [process.env.HARDHAT_WAFFLE_ACCOUNTS],
+      url: process.env.ALCHEMY_API_URL,
+      accounts: [process.env.META_MASK_ACCOUNTS],
     },
   },
 };
