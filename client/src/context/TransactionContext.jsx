@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
-
 import { contractABI, contractAddress } from '../utils/constants';
 
 export const TransactionContext = React.createContext();
@@ -101,7 +100,7 @@ export const TransactionProvider = ({ children }) => {
     }, []);
 
     return (
-        <TransactionContext.Provider value={{ connectWallet, currentAccount, formData, sendTransaction, handleChange }}>
+        <TransactionContext.Provider value={{ connectWallet, currentAccount, formData, transactions, isLoading, sendTransaction, handleChange }}>
             {children}
         </TransactionContext.Provider>
     )
