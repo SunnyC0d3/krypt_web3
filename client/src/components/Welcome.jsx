@@ -90,7 +90,7 @@ function Welcome() {
                         <Input placeholder="Enter message" name="message" type="text" handleChange={handleChange} />
                         <span className="h-[1px] w-full bg-gray-400 my-2"></span>
                         {
-                            true
+                            false
                                 ?
                                 (<Loader />)
                                 :
